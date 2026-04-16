@@ -5,26 +5,19 @@ This project uses Ultralytics YOLO for road detection training and Raspberry Pi 
 ## Setup
 
 ```bash
-sudo apt update
-sudo apt install python3-opencv libatlas-base-dev -y
-pip install ultralytics picamera2
+`pip install requirements.txt`
 ```
 
 ## Files
 
-- `road_detection_training.py` trains a YOLO model.
-- `road_detection_inference.py` runs inference with `Picamera2` and OpenCV.
+- `pi5_inference.py` runs inference with `Picamera2` and OpenCV.
 
 ## Run
-
-Train:
-
-```bash
-python3 road_detection_training.py
-```
 
 Infer:
 
 ```bash
-python3 road_detection_inference.py
+python3 pi5.inference.py
+python3 test_inference_vid.py
+python3 test_infrence.py
 ```
